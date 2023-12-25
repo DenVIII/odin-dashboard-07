@@ -1,0 +1,53 @@
+:root {
+    --main-color: rgb(23,143,210);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sidebar {
+    background-color: var(--main-color);
+    height: 100vh;
+    width: 150px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+}
+
+.sidebar > ul {
+    list-style: none;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(1.5em, 1fr));
+    font-size: 0.75rem;
+}
+
+ul.icons {
+    justify-items: center;
+}
+
+ul.text > li {
+    padding-left: 5px;
+}
+
+.sidebar li.main {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
