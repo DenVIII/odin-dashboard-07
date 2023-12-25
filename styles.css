@@ -31,7 +31,7 @@ body {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(1.5em, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(2em, 1fr));
     font-size: 0.75rem;
 }
 
