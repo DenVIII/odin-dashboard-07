@@ -21,7 +21,7 @@ body {
 .sidebar {
     background-color: var(--main-color);
     height: 100vh;
-    padding: 10px 10px;
+    padding: 25px 10px;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
 }
@@ -32,7 +32,7 @@ body {
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, minmax(2em, 1fr));
-    font-size: 0.75rem;
+    gap: 10px;
 }
 
 ul.icons {
@@ -44,8 +44,12 @@ ul.text > li {
     font-weight: bold;
 }
 
-.sidebar li.main {
-    font-size: 1rem;
+li * {
+    font-size: 1.2rem;  
+}
+
+li.main *{
+    font-size: 1.4rem;
 }
 
 a {
@@ -59,7 +63,8 @@ a {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    padding: 10px 30px;
+    padding: 25px 60px;
+    gap: 15px;
 }
 
 .header-top {
@@ -87,10 +92,57 @@ a {
 
 .user {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
+    gap: 20px;
 }
 
 .user-avatar {
     width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.welcome-username {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.user-avatar.big {
+    width: 45px;
+    height: 45px;
+    border-radius: 22px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.buttons > button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-transform: capitalize;
+    line-height: 0px;
+    font-weight: bold;
 }
