@@ -92,6 +92,7 @@ a {
     height: 20px;
     background-color: var(--background-color);
     border-radius: 10px;
+    border: none;
 }
 
 .user {
