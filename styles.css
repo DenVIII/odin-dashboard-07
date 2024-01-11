@@ -155,20 +155,21 @@ a {
 
 .main-content {
     background-color: var(--background-color);
+    padding: 20px 20px 50px 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 20px;
 }
 
-.projects {
+.projects > .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    padding: 10px 40px;
 }
 
 .section-title {
     grid-column: 1 /-1;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
 }
 
 .project {
@@ -192,4 +193,41 @@ a {
 
 .project-interactions i:hover {
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Announcements */
+
+.announcements > .wrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-size: 0.75rem;
+}
+
+.announcement {
+    padding: 20px 0;
+    border-bottom: 2px solid var(--background-color);
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement > .announcement-title {
+    margin-bottom: 5px;
+}
+
+.announcement > .decription {
+    color: rgb(91, 91, 91);
+}
+
+.side-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-section .title {
+    margin-bottom: 20px;
 }
