@@ -16,7 +16,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 150px 1fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -157,20 +157,28 @@ a {
 
 .main-content {
     background-color: var(--background-color);
-    padding: 20px 20px 50px 30px;
+    padding: 20px 20px 100px 30px;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
+}
+
+.projects {
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects > .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    height: 100%;
+    flex-grow: 1;
 }
 
-.section-title {
-    grid-column: 1 /-1;
+.main-content .title {
     margin-bottom: 20px;
 }
 
@@ -178,8 +186,9 @@ a {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
     width: 100%;
-    height: 200px;
-    padding: 30px 25px 10px 40px;
+    min-height: 150px;
+    height: 100%;
+    padding: 20px 15px 20px 25px;
     background-color: white;
     border-radius: 10px;
     border-left: 10px solid rgb(206,217,63);
@@ -191,11 +200,12 @@ a {
     gap: 15px;
     justify-content: end;
     font-size: 1.2rem;
+    align-items: flex-end;
 }
 
 .project-interactions i:hover {
-    font-size: 1.5rem;
     cursor: pointer;
+    color: var(--main-color);
 }
 
 /* Announcements */
@@ -230,10 +240,6 @@ a {
     gap: 20px;
 }
 
-.side-section .title {
-    margin-bottom: 20px;
-}
-
 /* Trending */
 
 .trending-profile {
@@ -259,4 +265,9 @@ a {
 .profile > .user-description {
     font-size: 0.8rem;
     color: var(--secondary-text);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(206,217,63);
 }
